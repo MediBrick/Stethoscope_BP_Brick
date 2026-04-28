@@ -33,11 +33,6 @@ For the design models refer to the README file.
 
 ## Electronics
 
-<a href="..\assets\pictures\Stethoscope_Top_Open_without_Plugins.jpg" target="_blank">
-  <img src="..\assets\pictures\Stethoscope_Top_Open_without_Plugins.jpg" style="width: 600px;">
-</a>
-
-
 ### Instructions
 
 Attach color coded wires to the IO pads. E.g. red for power, black or green for ground and blue or white for digital input/output and yellow for analog wires. 
@@ -65,7 +60,6 @@ Require connections are in **bold**.
 
 #### Button
 
-The button is configured to pull a pin high. One button pin is connected to 3.3V and the other to the input pin on the microcontroller. In software that pin is pulled low.
 
 PAD       | Function        | Thing Plus    | Feather
 ---       |---              |---            |---
@@ -73,7 +67,22 @@ PAD       | Function        | Thing Plus    | Feather
 **Button**| Button          | 9 or A0       | 12
 
 #### Pressure Sensor
-The MPRLS0300YG end of conversion output and external reset input.
+To solder the MPRLS0300YG pressure sensor onto the board, use a hot-air rework station. High-quality hot-air stations are available in the Engineering Design Center electronics room. Supervision is strongly recommended if you are not familiar with hot-air soldering.
+
+To solder the MPRLS0300YG, follow these steps:
+
+1. Locate the pressure sensor footprint on the PCB. The solder pads form a square pattern.
+2. Identify the orientation marker on the PCB footprint. One corner of the footprint has a dot.
+3. Apply flux to the pressure sensor pads on the PCB. It is acceptable to use a generous amount of flux.
+4. Inspect the underside of the pressure sensor and locate its orientation dot.
+5. Place the pressure sensor onto the PCB footprint, aligning the dot on the sensor with the dot on the PCB.
+6. Set the hot-air station to approximately 350 °C.
+7. Using gentle airflow, heat the pressure sensor evenly from above. Continue heating until the solder reflows and the sensor settles into place. Avoid pushing the sensor while the solder is molten.
+8. Remove the hot air and allow the board to cool before touching or moving the sensor.
+9. Turn off the hot-air station.
+10. Clean the flux residue from the board using isopropyl alcohol.
+
+You must also wire two signal wires to the ESP32-S3 board. The MPRLS0300YG has an end-of-conversion output and an external reset input.
 
 PAD       | Function          | Thing Plus | Feather
 ---       |---                |---         |---
@@ -85,12 +94,3 @@ PAD       | Function          | Thing Plus | Feather
 
 - [Thing Plus C Pinout](https://cdn.sparkfun.com/assets/3/9/5/f/e/SparkFun_Thing_Plus_ESP32_WROOM_C_graphical_datasheet2.pdf)
 - [ESP32 S3 Pinout](https://learn.adafruit.com/assets/110811)
-
-<a href="../assets/ThingPlusC_PinOut.png" target="_blank"> 
-  <img src="../assets/ThingPlusC_PinOut.png" style="width: 500px;">
-</a>
-
-<a href="../assets/adafruit_products_Adafruit_Feather_ESP32-S3_Pinout.png" target="_blank">
-  <img src="../assets/adafruit_products_Adafruit_Feather_ESP32-S3_Pinout.png" style="width: 500px;">
-</a>
-
