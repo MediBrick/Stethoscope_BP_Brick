@@ -35,9 +35,9 @@ For the design models refer to the README file.
 
 ### Instructions
 
-Attach color coded wires to the IO pads. E.g. red for power, black or green for ground and blue or white for digital input/output and yellow for analog wires. 
+Attach color-coded wires to the IO pads. E.g., red for power, black or green for ground, and blue or white for digital input/output and yellow for analog wires. 
 
-You can insert the wires into the holes (perpendicular) or or you can attach a short piece of the wires on top of the pad (perpendicular).
+You can insert the wires into the holes (perpendicular), or you can attach a short piece of the wires on top of the pad (perpendicular).
 
 Suggested connections for the Sparkfun Thing Plus (USB-C) and the Adafruit Feather ESP32-S3 are given below.
 
@@ -56,7 +56,7 @@ PAD       | Function        | Thing Plus    | Feather
 **MCLK**  | Master Clock    | LED  / GPIO13 | A4   / GPIO14 / ADC2-CH3
 **3.3V**  | Power           | 3V3           | 3V3
 
-Require connections are in **bold**.
+Required connections are in **bold**.
 
 #### Button
 
