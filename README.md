@@ -16,7 +16,7 @@ This stethoscope pressure solution consists of a sound as well as pressure recor
 | Battery                     |  1   | $10     | [Adafruit](https://www.adafruit.com/product/258)        | $10
 | PCB                         |  5   | $45.18 | PCBWay            | $9
 | Parts and Assembly          |  2   | $56.55 | PCBWay            | $29
-| MPRLS0300YG (pressure)      |  2   | $35    | Sager Electronics | $17.5
+| MPRLS0300YG (pressure)      |  2   | $35    | [DigiKey](https://www.digikey.com/en/products/detail/honeywell-sensing-and-productivity-solutions/MPRLS0300YG00001B/10231660) | $17.5
 | Stethoscope                 |  1   | $25    | [Amazon](https://a.co/d/7tQgoKs) | $25
 | Arm Cuff                    |  1   | $17    | [Amazon](https://a.co/d/gKueGYV) | $17
 | Assorted Wires              |8m    | $15    | [Amazon](https://a.co/d/58djefc) | $1
@@ -30,7 +30,7 @@ This stethoscope pressure solution consists of a sound as well as pressure recor
 | **Total with blood pressure**     |      |        |                   | **$140**
 | **Total without blood pressure**  |      |        |                   | **$100**
 
-Electronic components excluding the pressure sensor are $14 per board.
+Electronic components, excluding the pressure sensor, are $14 per board.
 
 The pressure sensor was mounted in house as the PCB assembly service did not have access to inexpensive source.
 
