@@ -60,11 +60,19 @@ Require connections are in **bold**.
 
 #### Button
 
-
 PAD       | Function        | Thing Plus    | Feather
 ---       |---              |---            |---
 **3.3V**  | Power           | 3V3           | 3V3
 **Button**| Button          | 9 or A0       | 12
+
+#### OLED Display
+
+PAD       | Function        | Thing Plus    | Feather
+---       |---              |---            |---
+**VCC**   | Power           |               | 3V3
+**GND**   | Ground          |               | GND
+**SDA**   | I2C Data        |               | 3
+**SCL**   | I2C Clock       |               | 4
 
 #### Pressure Sensor
 To solder the MPRLS0300YG pressure sensor onto the board, use a hot-air rework station. High-quality hot-air stations are available in the Engineering Design Center electronics room. Supervision is strongly recommended if you are not familiar with hot-air soldering.
