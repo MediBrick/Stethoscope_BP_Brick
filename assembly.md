@@ -21,11 +21,11 @@ The suggested pressure cuff tube has ID 4mm and uses barb with barb 7mm OD.
 - Luer Lock 5/32 barbed adapter for pressure cuff tube
 
 ## 3D Printed Parts
-For the design models refer to the README file.
+For the design models, refer to the README file.
 
-- Medibrick Housing
-  - Sensor Housing bottom part
-  - Sensor Housing top part
+- Medibrick Outer Casing
+  - Outer casing top part
+  - Outer casing bottom part 
 - Microphone Housing
   - Microphone Housing bottom part
   - Microphone Housing top part
