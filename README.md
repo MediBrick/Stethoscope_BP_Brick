@@ -94,9 +94,10 @@ The Bill of Materials is formatted so that its compatible with PCBWay submission
 These are the links to the OnShape Design files, which you can edit and modify if you have an OnShape account (OnShape has free academic accounts).
 
 - Microphone Housing
+  - [Stethsocope Microphone Assembly](https://cad.onshape.com/documents/ee811bb2ab3751feefe47661/w/e0d2a180f944fc3bec366a45/e/54bf9b309d863d100e018b9c)
+      - **It is highly recommended to 3D print this assembly only.** This will print the microphone housing in one piece, which is ideal. If you are interested in printing each piece separately, we include the parts individually below.  
   - [Stethoscope Microphone Bottom](https://cad.onshape.com/documents/f23280f0a46d3d6c755669df/w/b75e085438cd92ba1b26b647/e/00c40c7437b1518e003bac9d)
   - [Stethoscope Microphone Top](https://cad.onshape.com/documents/ef2b037c38f1baa1c0b23c04/w/556b341c46d5852ab7c96559/e/758f32969c2d9c1e8976b746)
-  - [Stethsocope Microphone Assembly](https://cad.onshape.com/documents/d283f9d6f3aaa55053af4362/w/49cecc8fd4c274541d804894/e/971484d9434ce01aa62acc7a)
 
   <a href="Models\Assembly.jpg" target="_blank">
     <img src="Models\Assembly.jpg" style="width: 200px;">
