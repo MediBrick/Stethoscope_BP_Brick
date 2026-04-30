@@ -69,16 +69,15 @@ These are the links to the OnShape Design files, which you can edit and modify i
 
 - Microphone Housing
   - [Stethsocope Microphone Assembly](https://cad.onshape.com/documents/ee811bb2ab3751feefe47661/w/e0d2a180f944fc3bec366a45/e/54bf9b309d863d100e018b9c)
-      - **It is highly recommended to 3D print this assembly only.** This will print the microphone housing in one piece, which is ideal. If you are interested in printing each piece separately, we include the parts individually below.  
+      - **It is highly recommended to 3D print the above assembly only.** This will print the microphone housing in one piece, which is ideal. If you are interested in printing each piece separately, we include the parts individually below.  
   - [Stethoscope Microphone Bottom](https://cad.onshape.com/documents/f23280f0a46d3d6c755669df/w/b75e085438cd92ba1b26b647/e/00c40c7437b1518e003bac9d)
   - [Stethoscope Microphone Top](https://cad.onshape.com/documents/ef2b037c38f1baa1c0b23c04/w/556b341c46d5852ab7c96559/e/758f32969c2d9c1e8976b746)
-
 
   <a href="Models\Assembly.jpg" target="_blank">
     <img src="Models\Assembly.jpg" style="width: 200px;">
   </a>
 
-- Medi Brick
+- MediBrick Casing (print each part separately)
   - [Brick Top](https://cad.onshape.com/documents/3e623ca30548a12ce7299cc8/w/5f2a080b0faade61438890b4/e/ad8d6a8373f4ad58bfcff645)
   - [Brick Bottom](https://cad.onshape.com/documents/8a6f8c2efb9044c31299c106/w/9dd5b18d3c71e13dc52259f5/e/1019a197700c3ec61eaf7a8d)
   - [Stethoscope Plate ](https://cad.onshape.com/documents/06546d5c2b6ecb0931149c5d/w/2aa54258cb58c3e795c7fea9/e/823e2851771a01788a8faacf)
@@ -88,7 +87,7 @@ These are the links to the OnShape Design files, which you can edit and modify i
  
 ## Filter Design Software
 
-The software uses a digital high and low pass filter with cut on at 35Hz and cut off at 2kHz to improve sound quality. The coefficients are computed with a [python program](Compute_Filter_Coefficients.py).
+The software uses a digital high and low pass filter with a cut-off at 35Hz and a cut-off at 2kHz to improve sound quality. The coefficients are computed with a [Python program](Compute_Filter_Coefficients.py).
 
 The frequency content of the stethoscope audio was referenced with papers listed in the code's comment. 
 
