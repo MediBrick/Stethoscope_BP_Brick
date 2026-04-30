@@ -45,7 +45,7 @@ Test software is located in the Arduino folder.
 | MediBrick_Stethoscope_PressureTest| Test the arm cuff pressure sensor
 
 ## Microcontroller Software &#9000;
-Refer to [Microcontroller_Software.md](https://github.com/walle637/Stethoscope_BP_Brick/edit/patch-2/Microcontroller_Software.md) for installation and usage instructions of the microcontroller software.
+Refer to [Microcontroller_Software.md](https://github.com/walle637/Stethoscope_BP_Brick/blob/patch-2/Microcontroller_Software.md) for installation and usage instructions of the microcontroller software.
 
 ## Electronics Design &#128268;
 
