@@ -73,14 +73,14 @@ These are the links to the OnShape Design files, which you can edit and modify i
   - [Stethoscope Microphone Bottom](https://cad.onshape.com/documents/f23280f0a46d3d6c755669df/w/b75e085438cd92ba1b26b647/e/00c40c7437b1518e003bac9d)
   - [Stethoscope Microphone Top](https://cad.onshape.com/documents/ef2b037c38f1baa1c0b23c04/w/556b341c46d5852ab7c96559/e/758f32969c2d9c1e8976b746)
 
+
   <a href="Models\Assembly.jpg" target="_blank">
     <img src="Models\Assembly.jpg" style="width: 200px;">
   </a>
 
 - Medi Brick
-  - [Brick Top](https://cad.onshape.com/documents/be6b7e5f847d89f3ec5eb9d5/w/761fee9865ca7ef709028476/e/ff897b4f359cec83b782ff14)
-  - [Brick Bottom](https://cad.onshape.com/documents/92ad78475e8f0b17ff5e260b/w/88a02abbcb12cdbd4d9de3ad/e/fb79ca58ad2b6a0298e9d1b6)
-  - [Brick Assembly](https://cad.onshape.com/documents/11cbfe9c3c739b6e8ecbf3d7/w/989b564ecd7f6d069e643ac0/e/85542f706be8cc7554218e8d)
+  - [Brick Top](https://cad.onshape.com/documents/3e623ca30548a12ce7299cc8/w/5f2a080b0faade61438890b4/e/ad8d6a8373f4ad58bfcff645)
+  - [Brick Bottom](https://cad.onshape.com/documents/8a6f8c2efb9044c31299c106/w/9dd5b18d3c71e13dc52259f5/e/1019a197700c3ec61eaf7a8d)
   - [Stethoscope Plate ](https://cad.onshape.com/documents/06546d5c2b6ecb0931149c5d/w/2aa54258cb58c3e795c7fea9/e/823e2851771a01788a8faacf)
 
 ## Assembly Instructions &#128736;
