@@ -4,7 +4,7 @@
   <img src=".\assets\pictures\Stethoscope_Front_Closed_with_Plugins.jpg" style="width: 500px;">
 </a>
 
-This stethoscope pressure solution consists of a sound as well as pressure recorder. For sound the I2S (Inter-Integrated Circuit Sound) bus is used to communicate with the microcontroller. This interface allows streaming and recording audio to an audio codec board. The Everest Semiconductor [ES8388 audio codec](datasheets\ES8388.pdf) was chosen because its supported by Arduino Audio Tools and Arduino Audio Driver and because Espressif created the Lyrat Audio modules with published reference [designs](datasheets\esp32-lyrat-v4-schematic.pdf). Sound is recorded with pui audio analog MEMS microphones [AMM-2742](datasheets\Microphone-AMM-2742-T-R.pdf) that are mounted on the printed circuit board. Two microphones are used where one is connected to the stethoscope and the other recording the background. An [dual differential amplifier](datasheets\opa344.pdf) is used to low pass filter and amplify the signal from the microphone, however amplification would not be needed for the ES8388 codec. Pressure is measured with a Honeywell MPR pressure sensor [MPRLS0300YG](datasheets/MPR_Pressure_HWSC_S_A0016036563_1-3073392.pdf) that convers the physiological range of 0 to 200 mm Hg.  
+This stethoscope pressure solution consists of a sound as well as pressure recorder. For sound the I2S (Inter-Integrated Circuit Sound) bus is used to communicate with the microcontroller. This interface allows streaming and recording audio to an audio codec board. The Everest Semiconductor [ES8388 audio codec](datasheets\ES8388.pdf) was chosen because its supported by Arduino Audio Tools and Arduino Audio Driver and because Espressif created the Lyrat Audio modules with published reference [designs](datasheets\esp32-lyrat-v4-schematic.pdf). Sound is recorded with pui audio analog MEMS microphones [AMM-2742](datasheets\Microphone-AMM-2742-T-R.pdf) that are mounted on the printed circuit board. Two microphones are used where one is connected to the stethoscope and the other recording the background. An [dual differential amplifier](datasheets\opa344.pdf) is used to low pass filter and amplify the signal from the microphone, amplification would not be needed for the ES8388 codec. Pressure is measured with a Honeywell MPR pressure sensor [MPRLS0300YG](datasheets/MPR_Pressure_HWSC_S_A0016036563_1-3073392.pdf) that convers the physiological range of 0 to 200 mm Hg.  
 
 ## Costs &#36;
 
@@ -16,7 +16,7 @@ This stethoscope pressure solution consists of a sound as well as pressure recor
 | Battery                     |  1   | $10     | [Adafruit](https://www.adafruit.com/product/258)        | $10
 | PCB                         |  5   | $45.18 | PCBWay            | $9
 | Parts and Assembly          |  2   | $56.55 | PCBWay            | $29
-| MPRLS0300YG (pressure)      |  2   | $35    | Sager Electronics | $17.5
+| MPRLS0300YG (pressure)      |  2   | $35    | [DigiKey](https://www.digikey.com/en/products/detail/honeywell-sensing-and-productivity-solutions/MPRLS0300YG00001B/10231660) | $17.5
 | Stethoscope                 |  1   | $25    | [Amazon](https://a.co/d/7tQgoKs) | $25
 | Arm Cuff                    |  1   | $17    | [Amazon](https://a.co/d/gKueGYV) | $17
 | Assorted Wires              |8m    | $15    | [Amazon](https://a.co/d/58djefc) | $1
@@ -30,23 +30,22 @@ This stethoscope pressure solution consists of a sound as well as pressure recor
 | **Total with blood pressure**     |      |        |                   | **$140**
 | **Total without blood pressure**  |      |        |                   | **$100**
 
-Electronic components excluding the pressure sensor are $14 per board.
+Electronic components, excluding the pressure sensor, are $14 per board.
 
-The pressure sensor was mounted in house as the PCB assembly service did not have access to inexpensive source.
+The pressure sensor was mounted in-house as the PCB assembly service did not have access to an inexpensive source.
 
 ## Test Software &#128187;
 Test software is located in the Arduino folder.
 
 | Folder | Description | 
 |--- |---|
-|MediBrick_Stethoscope_ES8388_to_CSV | Prints the two channel audio signal to the serial port for visualization with SerialUI application|
-| MediBrick_Stethoscope_ES8388_TestSound | Creates test tone in left and right channel for head phones
+|MediBrick_Stethoscope_ES8388_to_CSV | Prints the two-channel audio signal to the serial port for visualization with SerialUI application|
+| MediBrick_Stethoscope_ES8388_TestSound | Creates test tone in left and right channels for headphones
 | MediBrick_Stethoscope_ES8388_to_Headphone | Plays the recorded sound to the headphone
 | MediBrick_Stethoscope_PressureTest| Test the arm cuff pressure sensor
 
-## Microcontroller Software : &#9000;
-Not available yet.
-
+## Microcontroller Software &#9000;
+Refer to [Microcontroller_Software.md](https://github.com/walle637/Stethoscope_BP_Brick/blob/patch-2/Microcontroller_Software.md) for installation and usage instructions of the microcontroller software.
 
 ## Electronics Design &#128268;
 
@@ -69,18 +68,18 @@ The Bill of Materials is formatted so that its compatible with PCBWay submission
 These are the links to the OnShape Design files, which you can edit and modify if you have an OnShape account (OnShape has free academic accounts).
 
 - Microphone Housing
+  - [Stethsocope Microphone Assembly](https://cad.onshape.com/documents/ee811bb2ab3751feefe47661/w/e0d2a180f944fc3bec366a45/e/54bf9b309d863d100e018b9c)
+      - **It is highly recommended to 3D print the above assembly only.** This will print the microphone housing in one piece, which is ideal. If you are interested in printing each piece separately, we include the parts individually below.  
   - [Stethoscope Microphone Bottom](https://cad.onshape.com/documents/f23280f0a46d3d6c755669df/w/b75e085438cd92ba1b26b647/e/00c40c7437b1518e003bac9d)
   - [Stethoscope Microphone Top](https://cad.onshape.com/documents/ef2b037c38f1baa1c0b23c04/w/556b341c46d5852ab7c96559/e/758f32969c2d9c1e8976b746)
-  - [Stethsocope Microphone Assembly](https://cad.onshape.com/documents/d283f9d6f3aaa55053af4362/w/49cecc8fd4c274541d804894/e/971484d9434ce01aa62acc7a)
 
   <a href="Models\Assembly.jpg" target="_blank">
     <img src="Models\Assembly.jpg" style="width: 200px;">
   </a>
 
-- Medi Brick
-  - [Brick Top](https://cad.onshape.com/documents/be6b7e5f847d89f3ec5eb9d5/w/761fee9865ca7ef709028476/e/ff897b4f359cec83b782ff14)
-  - [Brick Bottom](https://cad.onshape.com/documents/92ad78475e8f0b17ff5e260b/w/88a02abbcb12cdbd4d9de3ad/e/fb79ca58ad2b6a0298e9d1b6)
-  - [Brick Assembly](https://cad.onshape.com/documents/11cbfe9c3c739b6e8ecbf3d7/w/989b564ecd7f6d069e643ac0/e/85542f706be8cc7554218e8d)
+- MediBrick Casing (print each part separately)
+  - [Brick Top](https://cad.onshape.com/documents/3e623ca30548a12ce7299cc8/w/5f2a080b0faade61438890b4/e/ad8d6a8373f4ad58bfcff645)
+  - [Brick Bottom](https://cad.onshape.com/documents/8a6f8c2efb9044c31299c106/w/9dd5b18d3c71e13dc52259f5/e/1019a197700c3ec61eaf7a8d)
   - [Stethoscope Plate ](https://cad.onshape.com/documents/06546d5c2b6ecb0931149c5d/w/2aa54258cb58c3e795c7fea9/e/823e2851771a01788a8faacf)
 
 ## Assembly Instructions &#128736;
@@ -88,7 +87,7 @@ These are the links to the OnShape Design files, which you can edit and modify i
  
 ## Filter Design Software
 
-The software uses a digital high and low pass filter with cut on at 35Hz and cut off at 2kHz to improve sound quality. The coefficients are computed with a [python program](Compute_Filter_Coefficients.py).
+The software uses a digital high and low pass filter with a cut-off at 35Hz and a cut-off at 2kHz to improve sound quality. The coefficients are computed with a [Python program](Compute_Filter_Coefficients.py).
 
 The frequency content of the stethoscope audio was referenced with papers listed in the code's comment. 
 
