@@ -1,18 +1,19 @@
 ## Installation
-Locate the ["Arduino"](https://github.com/walle637/Stethoscope_BP_Brick/tree/patch-2/Arduino) folder in this repository. Download it to your computer. 
+Locate the "Arduino" folder in this repository. Download it to your computer. 
 
-You will need several dependencies to run the Arduino code that is included.
-- Dependencies installed directly inside the Arduino IDE (already included in "Arduino\libraries" for your convenience)
-    - Adafruit_BusIO
-    - Adafruit_GFX_Library
-    - Adafruit_MAX1704X
-    - Adafruit_MPRLS_Library
-    - Adafruit_SSD1306
- - Dependencies downloaded from our provider, pschatzmann, on his GitHub (NOT included in "Arduino\libraries" for credit reasons)
-     -  https://github.com/pschatzmann/arduino-audio-tools
-     -  https://github.com/pschatzmann/arduino-audio-driver
+Install the following third-party libraries before compiling the software.
 
-Do not proceed until these libraries are installed; it will not compile. 
+In the Arduino IDE, open `Sketch -> Include Library -> Manage Libraries...`, then search for and install each library listed below.
+
+- [Adafruit BusIO](https://github.com/adafruit/Adafruit_BusIO)
+- [Adafruit GFX Library](https://github.com/adafruit/Adafruit-GFX-Library)
+- [Adafruit MAX1704X](https://github.com/adafruit/Adafruit_MAX1704X)
+- [Adafruit MPRLS Library](https://github.com/adafruit/Adafruit_MPRLS)
+- [Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306)
+
+- Dependencies downloaded from pschatzmann, on his GitHub
+  -  https://github.com/pschatzmann/arduino-audio-tools
+  -  https://github.com/pschatzmann/arduino-audio-driver
 
 Using the Arduino IDE, open the "MediBrick_Stethoscope_BP_Microcontroller_Software" folder, and flash the code to your ESP32-S3.
 
