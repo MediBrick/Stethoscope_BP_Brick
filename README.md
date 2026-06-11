@@ -96,3 +96,13 @@ The frequency content of the stethoscope audio was referenced with papers listed
 <a href="filter_responses.svg" target="_blank">
   <img src="filter_responses.svg" style="width: 600px;">
 </a>
+
+## Changelog
+
+### 2026-06-10
+
+- Uploaded release commit `a2ae687` to `main`.
+- Removed vendored third-party libraries under `Arduino/libraries`.
+- Updated documentation to reference external dependencies and cleaned link formatting.
+- Added/updated Arduino test and utility sketches.
+- Standardized file naming for assembly and BOM files (`Assembly.md`, `Sound_BOM_2024.xlsx`, `Sound_BOM_2026.xlsx`).
