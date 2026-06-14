@@ -17,11 +17,14 @@ In the Arduino IDE, open `Sketch -> Include Library -> Manage Libraries...`, the
 
 Using the Arduino IDE, open the "MediBrick_Stethoscope_BP_Microcontroller_Software" folder, and flash the code to your ESP32-S3.
 
+You will need to make sure the defaults for the wiring are correct.
+It is recommended to select board configuration "USB Mode: CDC", "Upload Hardware CDC" and to enable "CDC on Boot".
+
 ## Usage Guide
 The microcontroller software includes several built-in functions, including:
 
-- Auto-shutoff after 4 hours
-- Automatic zeroing when the MediBrick is turned on
+- Auto-shutoff after 4.5 hours
+- Automatic zeroing of pressure when the MediBrick is turned on
 - Blood pressure readings
 - Stethoscope audio output
    - Headphone jack audio
@@ -33,13 +36,74 @@ These settings can be adjusted through the internal serial menu. To access the m
 
 The following commands can be entered into the Serial Monitor:
 
+**Mode selection**
+
 | Command | Function |
 |---|---|
 | `p` | Pressure-only mode |
 | `s` | Stethoscope-only mode |
 | `b` | Both: pressure on OLED and audio active |
-| `t` | Toggle the stethoscope audio plot to SerialUI on/off |
-| `h` | Help |
-| `<` | Decrease output volume |
-| `>` | Increase output volume |
-| `v` | Print current output volume |
+
+**Serial plot control** — while the plot is active, command responses are suppressed to keep the data stream clean
+
+| Command | Function |
+|---|---|
+| `t` | Toggle audio plot on/off |
+| `d` | Cycle plot decimation: 1 → 2 → 4 → 8 → 1 (reduces sample rate sent over serial) |
+| `?` | Print help and turn plot off |
+| `v` | Print all current settings and turn plot off |
+
+**Settings persistence**
+
+| Command | Function |
+|---|---|
+| `j` | Save current settings to flash |
+| `J` | Load settings from flash and apply |
+
+**Output (codec / headphone) volume** — range 0–100, step 6
+
+| Command | Function |
+|---|---|
+| `>` | Output volume up |
+| `<` | Output volume down |
+
+**Input (microphone) volume** — nine discrete 3 dB gain levels
+
+| Command | Function |
+|---|---|
+| `.` | Input volume up |
+| `,` | Input volume down |
+
+**Software gain** — range 0.5–4.0, step 0.5
+
+| Command | Function |
+|---|---|
+| `+` | Software gain up |
+| `-` | Software gain down |
+
+**Low-pass filter** — step 250 Hz
+
+| Command | Function |
+|---|---|
+| `L` | Low-pass cutoff frequency up |
+| `l` | Low-pass cutoff frequency down |
+| `K` | Low-pass filter ON |
+| `k` | Low-pass filter OFF |
+
+**High-pass filter** — step 1 Hz
+
+| Command | Function |
+|---|---|
+| `H` | High-pass cutoff frequency up |
+| `h` | High-pass cutoff frequency down |
+| `G` | High-pass filter ON |
+| `g` | High-pass filter OFF |
+
+**Noise cancellation** (right channel minus scaled left channel)
+
+| Command | Function |
+|---|---|
+| `N` | Noise cancel ON |
+| `n` | Noise cancel OFF |
+| `C` | Left noise scale up (step 0.05, range 0.5–1.5) |
+| `c` | Left noise scale down (step 0.05, range 0.5–1.5) |

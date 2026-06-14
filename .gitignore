@@ -1,0 +1,10 @@
+# Office temporary lock files
+.~lock.*#
+
+# KiCad local history, UI state, logs, and backups
+KiCad/.history/
+KiCad/*.kicad_prl
+KiCad/*.bak
+KiCad/log.txt
+KiCad/Sound.pretty/*_backup
+KiCad/~*.lck

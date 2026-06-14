@@ -18,7 +18,8 @@
 - Luer lock adapters
 - Miscellaneous hardware:
   - M3 screws, 20 mm, and nuts for PCB mounting
-  - M3 screws and nuts for microcontroller / enclosure mounting
+  - M3 & M2.5 screws for microcontroller / enclosure mounting
+  - Plastic washers
 
 ## 3D Printed Parts
 
@@ -28,8 +29,7 @@ For the design models, refer to the README.
   - Outer casing top part
   - Outer casing bottom part
 - Microphone Housing
-  - Microphone housing top part
-  - Microphone housing bottom part
+  - Microphone housing has not been updated yet for new 10mm microphones.
 - Side plate
 
 ## Tubing and Adapter Notes

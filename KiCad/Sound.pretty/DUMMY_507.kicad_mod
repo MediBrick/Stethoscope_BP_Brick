@@ -1,0 +1,55 @@
+(footprint "DUMMY_507"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Dummy Footprint\n\nNOTHING HERE!!! For when you want a symbol with no package as an option against symbols with a package.\n\nDevices using:\n\n• BADGERHACK_LOGO\n• FRAME-LETTER")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e98a8109-fa70-4462-b87b-d96d673121aa")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "FRAME-LETTERNO_PACKAGE"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a4eca818-d4d3-4886-9ce5-b7d59490340f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "107c755f-e644-434d-87fe-c03f1e0150e3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7a9016b2-78f0-43be-89c4-3d0305221674")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(embedded_fonts no)
+)

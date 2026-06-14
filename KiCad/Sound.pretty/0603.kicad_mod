@@ -1,0 +1,141 @@
+(footprint "0603"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Generic 1608 (0603) package\n\n0.2mm courtyard excess rounded to nearest 0.05mm.")
+	(property "Reference" "REF**"
+		(at 2.6 -0.3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "5f08af83-382f-40d4-91d6-4102138b2bea")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.04)
+			)
+			(justify top)
+		)
+	)
+	(property "Value" "0.1uF"
+		(at -2.6 0.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "33a7914b-c6ab-4e46-8547-e672f9fca8b1")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.04)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0ac3251e-417d-45ac-8cb6-0dd4fa88629f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4daff72a-7dbd-4a71-8443-4d4c6e437e72")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_poly
+		(pts
+			(xy -0.1999 0.3) (xy 0.1999 0.3) (xy 0.1999 -0.3) (xy -0.1999 -0.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Adhes")
+		(uuid "17af983f-6ac6-4f78-a7e8-c37967858a79")
+	)
+	(fp_line
+		(start -0.356 -0.6)
+		(end 0.356 -0.6)
+		(stroke
+			(width 0.1016)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a1b655d7-6ec5-47d0-a9c0-45216712e250")
+	)
+	(fp_line
+		(start -0.356 0.6)
+		(end 0.356 0.6)
+		(stroke
+			(width 0.1016)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e8c7575d-9e16-43cd-9bd1-e77c7fabb729")
+	)
+	(fp_poly
+		(pts
+			(xy -0.8382 0.4699) (xy -0.3381 0.4699) (xy -0.3381 -0.4801) (xy -0.8382 -0.4801)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "cb2a1908-3423-46f8-929d-97a4ecc2aef8")
+	)
+	(fp_poly
+		(pts
+			(xy 0.3302 0.4699) (xy 0.8303 0.4699) (xy 0.8303 -0.4801) (xy 0.3302 -0.4801)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "688c61bf-cefa-4b48-bd1d-64671e70a374")
+	)
+	(attr smd)
+	(pad "1" smd rect
+		(at -0.85 0)
+		(size 1.1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "a7aba3f6-778b-4211-95b5-01bfc381cbd9")
+	)
+	(pad "2" smd rect
+		(at 0.85 0)
+		(size 1.1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "04607bcb-4ad5-4fef-813c-39c68da56440")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/Sound.3d/RC0603FR-07220RL.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
